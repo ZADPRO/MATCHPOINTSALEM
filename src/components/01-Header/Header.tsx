@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 import logo from "../../assets/logo/logo1.png";
-import { Facebook, Instagram, Mail } from "lucide-react";
 
 const Header: React.FC = () => {
   const navigate = useNavigate();
@@ -30,26 +29,9 @@ const Header: React.FC = () => {
 
   return (
     <div className="w-full">
-      {/* Top Header - Hide on scroll */}
-      <div
-        className={`flex px-10 py-2 justify-between bg-white transition-all duration-300 ${
-          isScrolled ? "hidden" : "flex"
-        }`}
-      >
-        <div>
-          <p>+91 86673 55490</p>
-        </div>
-        <div className="flex gap-5 items-center">
-          <Facebook />
-          <Mail />
-          <Instagram />
-        </div>
-      </div>
-
-      {/* Main Navigation */}
       <div
         className={`w-full fixed left-0 z-50 transition-all duration-300 ${
-          isScrolled ? "top-5 bg-[#5a2104]" : "top-[50px] bg-transparent"
+          isScrolled ? "top-5 bg-[#5a2104]" : "top-[20px] bg-transparent"
         }`}
       >
         <div
