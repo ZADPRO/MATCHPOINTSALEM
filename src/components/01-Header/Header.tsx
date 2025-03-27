@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import logo from "../../assets/logo/logo1.png";
+import { Facebook, Instagram, Mail } from "lucide-react";
 
 const Header: React.FC = () => {
   const navigate = useNavigate();
@@ -12,11 +13,21 @@ const Header: React.FC = () => {
   };
   return (
     <div>
-      <div className="w-full fixed top-0 left-0 z-50 bg-[]">
+      <div className="flex px-10 py-2 justify-between bg-white">
+        <div>
+          <p>+91 86673 55490</p>
+        </div>
+        <div className="flex gap-5 items-center">
+          <Facebook />
+          <Mail />
+          <Instagram />
+        </div>
+      </div>
+      <div className="w-full fixed left-0 z-50 bg-[]">
         <div
           className={`w-full flex ${
             menuStatus ? "fixed z-50" : ""
-          } justify-center items-center h-[80px] bg-[]`}
+          } justify-center items-center h-[60px] bg-[]`}
         >
           <div className="w-[80%] h-[10vh] lg:w-[90%] pt-4 flex lg:justify-evenly justify-between items-center">
             <div className="w-[50%] lg:w-[30%] flex justify-start">
