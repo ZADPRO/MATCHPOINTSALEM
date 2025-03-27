@@ -1,12 +1,12 @@
 .homePageContainer01 {
-  background: url("../../assets/homePage/home.jpg") no-repeat center;
+  background: url("../../assets/homePage/home2.jpg") no-repeat center;
   background-size: cover;
   background-position: center;
 }
 
 @media (max-width: 640px) {
   .homePageContainer01 {
-    background: url("../../assets/homePage/home.jpg") no-repeat center;
+    background: url("../../assets/homePage/homeMobile.jpg") no-repeat center;
     background-size: cover;
   }
 }

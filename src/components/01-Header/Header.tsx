@@ -18,9 +18,9 @@ const Header: React.FC = () => {
             menuStatus ? "fixed z-50" : ""
           } justify-center items-center h-[80px] bg-[]`}
         >
-          <div className="w-[80%] h-[10vh] lg:w-[93%] flex justify-evenly items-center">
+          <div className="w-[80%] h-[10vh] lg:w-[90%] pt-4 flex lg:justify-evenly justify-between items-center">
             <div className="w-[50%] lg:w-[30%] flex justify-start">
-              <img src={logo} className="w-[220px]" alt="log" />
+              <img src={logo} className="w-[200px]" alt="logo" />
             </div>
             <div className="hidden lg:flex w-[90%] justify-center gap-x-10">
               <div
