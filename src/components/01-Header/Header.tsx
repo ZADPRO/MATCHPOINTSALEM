@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-import logo from "../../assets/logo/logo1.png";
+import logo from "../../assets/logo/logo2.png";
 
 const Header: React.FC = () => {
   const navigate = useNavigate();
@@ -31,17 +31,17 @@ const Header: React.FC = () => {
     <div className="w-full">
       <div
         className={`w-full fixed left-0 z-50 transition-all duration-300 ${
-          isScrolled ? "top-5 bg-[#5a2104]" : "top-[20px] bg-transparent"
+          isScrolled ? "top-3 bg-[#5a2104]" : "top-[20px] bg-transparent"
         }`}
       >
         <div
           className={`w-full flex ${
             menuStatus ? "fixed z-50" : ""
-          } justify-center items-center h-[50px] transition-all duration-300`}
+          } justify-center items-center h-[80px] transition-all duration-300`}
         >
           <div className="w-[80%] h-[10vh] lg:w-[90%] pb-2 flex lg:justify-evenly justify-between items-center">
             <div className="w-[50%] lg:w-[30%] flex justify-start">
-              <img src={logo} className="w-[200px]" alt="logo" />
+              <img src={logo} className="w-[100px]" alt="logo" />
             </div>
             <div className="hidden lg:flex w-[90%] justify-center gap-x-10">
               <div

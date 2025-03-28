@@ -2,6 +2,7 @@
   background: url("../../assets/homePage/home2.jpg") no-repeat center;
   background-size: cover;
   background-position: center;
+  scrollbar-width: none;
 }
 
 @media (max-width: 640px) {
