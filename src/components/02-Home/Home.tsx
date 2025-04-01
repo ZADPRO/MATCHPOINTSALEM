@@ -242,7 +242,7 @@ const Home: React.FC = () => {
             <p className="text-black text-[18px] font-semibold uppercase">
               About Us
             </p>
-            <p className="text-black text-[22px] font-bold py-3">
+            <p className="text-black fontFam text-[22px] font-bold py-3">
               "Good food. Great memories. All under one roof."
             </p>
             <p className="text-center text-black px-4">
