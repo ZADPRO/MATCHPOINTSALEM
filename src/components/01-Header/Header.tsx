@@ -25,6 +25,7 @@ const Header: React.FC = () => {
   const handleNavigation = (path: string) => {
     navigate(path);
     setMenuStatus(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (

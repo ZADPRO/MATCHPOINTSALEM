@@ -1,15 +1,21 @@
 import { Clock, LocateIcon, MailIcon, PhoneIcon } from "lucide-react";
 import React from "react";
 
-import contactImg from "../../assets/contact/contactImg1.png";
-
 const Contact: React.FC = () => {
   return (
     <div>
-      <div className="contactPageCont01 flex lg:flex-row flex-col items-center justify-center h-[70vh] bg-cover bg-center text-white overflow-auto"></div>
+      <div className="contactPageCont01 flex lg:flex-row flex-col items-center justify-center h-[70vh] bg-cover bg-center text-white overflow-auto">
+        <div
+          className="text-start lg:pt-0 pt-40 px-6 lg:px-20 flex-1"
+          data-aos="fade-right"
+        >
+          <h1 className="text-3xl lg:text-5xl font-bold mb-4">Contact Us </h1>
+        </div>
+        <div className="lg:mt-6 flex-1" data-aos=""></div>
+      </div>
 
       <div className="flex lg:flex-row flex-col w-full md:w-10/12 mx-auto py-10">
-        <div className="cardContacts flex flex-1 flex-col m-5 items-center border-1 border-[#f3f4f6] p-4 rounded text-center">
+        <div className="cardContacts flex flex-1 flex-col m-5 items-center border-1 border-[rgb(81,81,81)] p-4 rounded text-center">
           <div className="iconCont border-1 border-[#f3f4f6] p-3 rounded">
             <LocateIcon size={40} />
           </div>
@@ -18,7 +24,7 @@ const Contact: React.FC = () => {
             No.1, Selva Nagar, Seelanaickenpatty, Salem, Tamil Nadu, 636201.
           </p>
         </div>
-        <div className="cardContacts flex flex-1 flex-col m-5 items-center border-1 border-[#f3f4f6] p-4 rounded text-center">
+        <div className="cardContacts flex flex-1 flex-col m-5 items-center border-1 border-[rgb(81,81,81)] p-4 rounded text-center">
           <div className="iconCont border-1 border-[#f3f4f6] p-3 rounded">
             <MailIcon size={40} />
           </div>
@@ -26,7 +32,7 @@ const Contact: React.FC = () => {
           <p className="text-[16px]">orders@matchpointsalem.com</p>
           <p>24/7 priority support.</p>
         </div>
-        <div className="cardContacts flex flex-1 flex-col m-5 items-center border-1 border-[#f3f4f6] p-4 rounded text-center">
+        <div className="cardContacts flex flex-1 flex-col m-5 items-center border-1 border-[rgb(81,81,81)] p-4 rounded text-center">
           <div className="iconCont border-1 border-[#f3f4f6] p-3 rounded">
             <PhoneIcon size={40} />
           </div>
@@ -35,7 +41,7 @@ const Contact: React.FC = () => {
 
           <p className="text-[16px]">24/7 priority support.</p>
         </div>
-        <div className="cardContacts flex flex-1 flex-col m-5 items-center border-1 border-[#f3f4f6] p-4 rounded text-center">
+        <div className="cardContacts flex flex-1 flex-col m-5 items-center border-1 border-[rgb(81,81,81)] p-4 rounded text-center">
           <div className="iconCont border-1 border-[#f3f4f6] p-3 rounded">
             <Clock size={40} />
           </div>
@@ -46,11 +52,9 @@ const Contact: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex lg:flex-row flex-col w-full md:w-9/12 mx-auto gap-5 py-10">
-        <div className="flex-1">
-          <img src={contactImg} alt="" />
-        </div>
-        <div className="flex-1">
+      <div className="flex blogPageDrafted h-screen items-center lg:flex-row flex-col w-full py-10">
+        <div className="flex-1"></div>
+        <div className="flex-1 w-full">
           <div className="container px-4 mx-auto">
             <div className="mx-auto">
               <div className="max-w-md mx-auto px-8 py-6 bg-gray-100 rounded-lg">

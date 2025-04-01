@@ -10,7 +10,15 @@ import yarnBird from "../../assets/menu/yarnBird.jpg";
 const Menu: React.FC = () => {
   return (
     <div>
-      <div className="menuPageCont01 flex lg:flex-row flex-col items-center justify-center h-[70vh] bg-cover bg-center text-white overflow-auto"></div>
+      <div className="menuPageCont01 flex lg:flex-row flex-col items-center justify-center h-[70vh] bg-cover bg-center text-white overflow-auto">
+        <div
+          className="text-start lg:pt-0 pt-40 px-6 lg:px-20 flex-1"
+          data-aos="fade-right"
+        >
+          <h1 className="text-3xl lg:text-5xl font-bold mb-4">Menu </h1>
+        </div>
+        <div className="lg:mt-6 flex-1" data-aos=""></div>
+      </div>
 
       <div className="m-3 w-full md:w-10/12 mx-auto">
         <div className="flex lg:flex-row flex-col gap-4 items-center justify-center my-3">

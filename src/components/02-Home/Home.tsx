@@ -238,7 +238,7 @@ const Home: React.FC = () => {
             className="lg:w-1/4 rounded-tr-[170px] rounded-br-[170px]"
             alt=""
           />
-          <div className="lg:w-1/2 px-5">
+          <div className="lg:w-1/2 px-5 py-6">
             <p className="text-black text-[18px] font-semibold uppercase">
               About Us
             </p>

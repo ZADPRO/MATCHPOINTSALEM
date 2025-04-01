@@ -13,17 +13,25 @@
 }
 
 .blogPage1Cover {
-  background: url("../../assets/homePage/home2.jpg") no-repeat center;
+  position: relative;
+  background: url("../../assets/blog/blogCoverImg.jpg") no-repeat center;
   background-size: cover;
-  background-position: center;
-  scrollbar-width: none;
 }
 
-@media (max-width: 640px) {
-  .blogPage1Cover {
-    background: url("../../assets/homePage/homeMobile.jpg") no-repeat center;
-    background-size: cover;
-  }
+.blogPage1Cover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}
+
+.blogPage1Cover * {
+  position: relative;
+  z-index: 2; /* Ensure text stays above the overlay */
 }
 
 .aboutPageCont01 {
@@ -84,4 +92,18 @@
 
 .cardContacts {
   background-color: #f3f4f6;
+}
+
+.blogPageDrafted {
+  background: url("../../assets/contact/contactImg.jpg") no-repeat center;
+  background-size: cover;
+  background-position: center;
+  scrollbar-width: none;
+}
+
+@media (max-width: 640px) {
+  .blogPageDrafted {
+    background: url("../../assets/contact/contactImg.jpg") no-repeat center;
+    background-size: cover;
+  }
 }
