@@ -4,7 +4,7 @@ import React from "react";
 const Contact: React.FC = () => {
   return (
     <div>
-      <div className="homePageContainer01 flex lg:flex-row flex-col items-center justify-center h-[70vh] bg-cover bg-center text-white overflow-auto"></div>
+      <div className="contactPageCont01 flex lg:flex-row flex-col items-center justify-center h-[70vh] bg-cover bg-center text-white overflow-auto"></div>
 
       <div className="flex lg:flex-row flex-col w-full md:w-10/12 mx-auto py-10">
         <div className="cardContacts flex flex-1 flex-col m-5 items-center border-1 border-[#ff0000] p-4 rounded text-center">

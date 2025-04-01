@@ -25,3 +25,45 @@
     background-size: cover;
   }
 }
+
+.aboutPageCont01 {
+  background: url("../../assets/about/aboutBg.jpg") no-repeat center;
+  background-size: cover;
+  background-position: center;
+  scrollbar-width: none;
+}
+
+@media (max-width: 640px) {
+  .aboutPageCont01 {
+    background: url("../../assets/homePage/homeMobile.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+.menuPageCont01 {
+  background: url("../../assets/about/menu.jpg") no-repeat center;
+  background-size: cover;
+  background-position: center;
+  scrollbar-width: none;
+}
+
+@media (max-width: 640px) {
+  .menuPageCont01 {
+    background: url("../../assets/homePage/homeMobile.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+.contactPageCont01 {
+  background: url("../../assets/about/contact.jpg") no-repeat center;
+  background-size: cover;
+  background-position: center;
+  scrollbar-width: none;
+}
+
+@media (max-width: 640px) {
+  .contactPageCont01 {
+    background: url("../../assets/homePage/homeMobile.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
