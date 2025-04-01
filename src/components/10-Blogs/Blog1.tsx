@@ -1,9 +1,9 @@
 import React from "react";
 
-import blog1Cover from "../../assets/blog/blog1Cover.jpg";
+// import blog1Cover from "../../assets/blog/blog1Cover.jpg";
 import blog1Img1 from "../../assets/blog/blog11.jpg";
 import blog1Img2 from "../../assets/blog/blog12.jpg";
-import blog1Img3 from "../../assets/blog/blog13.jpg";
+// import blog1Img3 from "../../assets/blog/blog13.jpg";
 
 const Blog1: React.FC = () => {
   return (
