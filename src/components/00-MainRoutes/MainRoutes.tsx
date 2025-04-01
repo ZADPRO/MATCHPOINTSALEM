@@ -11,6 +11,7 @@ import Menu from "../04-Menu/Menu";
 import Footer from "../06-Footer/Footer";
 import Home from "../02-Home/Home";
 import Contact from "../05-Contact/Contact";
+import Blog1 from "../10-Blogs/Blog1";
 
 const MainRoutes: React.FC = () => {
   function AppRoutes() {
@@ -21,10 +22,8 @@ const MainRoutes: React.FC = () => {
       "/about",
       "/menu",
       "/contact",
-      "/restroMenu",
-      "/ourBrand",
-      "/beOurPartner",
-      "/career",
+      "/blogs",
+      "/a-food-court-for-every-craving",
     ];
     const showHeader = headerRoutes.includes(location.pathname);
 
@@ -36,6 +35,7 @@ const MainRoutes: React.FC = () => {
           <Route path="/about" element={<About />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/a-food-court-for-every-craving" element={<Blog1 />} />
         </Routes>
         <Footer />
       </div>

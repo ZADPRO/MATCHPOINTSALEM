@@ -13,9 +13,9 @@ import texMex from "../../assets/restaurants/texMex1.png";
 
 import Glide from "@glidejs/glide";
 
-import food1 from "../../assets/homePage/food1.jpg";
-import food2 from "../../assets/homePage/food2.jpg";
-import food3 from "../../assets/homePage/food3.jpg";
+import food1 from "../../assets/homePage/food11.jpg";
+import food2 from "../../assets/homePage/food22.jpg";
+import food3 from "../../assets/homePage/food33.jpg";
 
 import foodImgBg1 from "../../assets/homePage/dosa.jpg";
 import pizzaBg1 from "../../assets/homePage/pizza1.jpg";
@@ -30,14 +30,21 @@ import foodImg7 from "../../assets/homePage/pizza.png";
 
 // import aboutUsImg from "../../assets/about/aboutUsBgOne.png";
 
+// import temp1 from "../../assets/blog/temp.png";
+
+import blog1Cover from "../../assets/blog/blog1Cover.jpg";
+import { ShieldUser, Tags, TrendingUp } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+
 const Home: React.FC = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     const slider = new Glide(".glide-08", {
       type: "carousel",
       autoplay: 1,
       animationDuration: 2500,
       animationTimingFunc: "linear",
-      perView: 3,
+      perView: 4,
       classes: {
         swipeable: "glide__swipeable",
         dragging: "glide__dragging",
@@ -82,7 +89,7 @@ const Home: React.FC = () => {
       autoplay: 1,
       animationDuration: 2500,
       animationTimingFunc: "linear",
-      perView: 3,
+      perView: 5,
       classes: {
         swipeable: "glide__swipeable",
         dragging: "glide__dragging",
@@ -125,15 +132,15 @@ const Home: React.FC = () => {
     <div>
       <div className="homePageContainer01 flex lg:flex-row flex-col items-center justify-center h-screen bg-cover bg-center text-white overflow-auto">
         <div
-          className="text-start lg:pt-0 pt-30 px-6 lg:px-20 flex-1"
+          className="text-start lg:pt-0 pt-40 px-6 lg:px-20 flex-1"
           data-aos="fade-right"
         >
-          <h1 className="text-4xl lg:text-5xl font-bold mb-4">
+          <h1 className="text-3xl lg:text-5xl font-bold mb-4">
             One roof. <br />
             Infinite Happiness. <br />
             Endless Country Cuisine.{" "}
           </h1>
-          <p className="text-lg lg:text-xl max-w-2xl mx-auto">
+          <p className="text-md lg:text-xl max-w-2xl mx-auto">
             Match point will be the go-to destination for anyone who loves
             variety, quality, and innovation in food.
           </p>
@@ -146,6 +153,46 @@ const Home: React.FC = () => {
           />
         </div>
       </div>
+
+      <div className="flex lg:flex-row flex-col gap-2 m-4">
+        <div
+          className="w-[100%] flex relative h-50 bg-cover bg-center items-center rounded"
+          style={{ backgroundImage: `url(${food1})` }}
+        >
+          <div className="absolute w-1/2 left-2 p-4 rounded shadow">
+            <p className="text-white">On This Week</p>
+            <p className="text-white font-bold text-[25px] uppercase">
+              Spicy Fried Chicken
+            </p>
+            <p className="text-white">Limited Time Offer</p>
+          </div>
+        </div>
+        <div
+          className="w-[100%] flex relative h-50 bg-cover bg-center items-center rounded"
+          style={{ backgroundImage: `url(${food2})` }}
+        >
+          <div className="absolute w-1/2 left-2 p-4 rounded shadow">
+            <p className="text-white">On This Week</p>
+            <p className="text-white font-bold text-[25px] uppercase">
+              Today Special Food{" "}
+            </p>
+            <p className="text-white">Limited Time Offer</p>
+          </div>
+        </div>
+        <div
+          className="w-[100%] flex relative h-50 bg-cover bg-center items-center rounded"
+          style={{ backgroundImage: `url(${food3})` }}
+        >
+          <div className="absolute w-1/2 left-2 p-4 rounded shadow">
+            <p className="text-white">On This Week</p>
+            <p className="text-white font-bold text-[25px] uppercase">
+              Special Chicken Roll
+            </p>
+            <p className="text-white">Limited Time Offer</p>
+          </div>
+        </div>
+      </div>
+
       <div className="text-center py-10">
         <p className="text-black text-[18px] font-semibold uppercase">
           Our Brands
@@ -183,53 +230,14 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex lg:flex-row flex-col gap-2 m-4">
-        <div
-          className="w-[100%] flex relative h-40 bg-cover bg-center rounded before:absolute before:inset-0 before:bg-black/50"
-          style={{ backgroundImage: `url(${food1})` }}
-        >
-          <div className="absolute w-1/2 left-2 top-1/2 transform -translate-y-1/2 p-4 rounded shadow">
-            <p className="text-white">On This Week</p>
-            <p className="text-white font-bold text-[25px] uppercase">
-              Spicy Fried Chicken
-            </p>
-            <p className="text-white">Limited Time Offer</p>
-          </div>
-        </div>
-        <div
-          className="w-[100%] flex relative h-40 bg-cover bg-center rounded before:absolute before:inset-0 before:bg-black/50"
-          style={{ backgroundImage: `url(${food2})` }}
-        >
-          <div className="absolute w-1/2 left-2 top-1/2 transform -translate-y-1/2 p-4 rounded shadow">
-            <p className="text-white">On This Week</p>
-            <p className="text-white font-bold text-[25px] uppercase">
-              Today Special Food{" "}
-            </p>
-            <p className="text-white">Limited Time Offer</p>
-          </div>
-        </div>
-        <div
-          className="w-[100%] flex relative h-40 bg-cover bg-center rounded before:absolute before:inset-0 before:bg-black/50"
-          style={{ backgroundImage: `url(${food3})` }}
-        >
-          <div className="absolute w-1/2 left-2 top-1/2 transform -translate-y-1/2 p-4 rounded shadow">
-            <p className="text-white">On This Week</p>
-            <p className="text-white font-bold text-[25px] uppercase">
-              Special Chicken Roll
-            </p>
-            <p className="text-white">Limited Time Offer</p>
-          </div>
-        </div>
-      </div>
-
       <div className="relative flex lg:flex-row text-center flex-col gap-2 py-10 bg-cover bg-center">
-        <div className="relative flex items-center">
+        <div className="relative flex lg:flex-row flex-col items-center">
           <img
             src={foodImgBg1}
-            className="w-1/4 rounded-tr-[170px] rounded-br-[170px]"
+            className="lg:w-1/4 rounded-tr-[170px] rounded-br-[170px]"
             alt=""
           />
-          <div className="w-1/2 px-5">
+          <div className="lg:w-1/2 px-5">
             <p className="text-black text-[18px] font-semibold uppercase">
               About Us
             </p>
@@ -248,7 +256,7 @@ const Home: React.FC = () => {
           </div>
           <img
             src={pizzaBg1}
-            className="w-1/4 rounded-tl-[170px] rounded-bl-[170px]"
+            className="lg:w-1/4 rounded-tl-[170px] rounded-bl-[170px]"
             alt=""
           />
         </div>
@@ -265,51 +273,115 @@ const Home: React.FC = () => {
         <div className="glide-09 relative overflow-hidden py-10 w-full md:w-11/12 mx-auto">
           <div data-glide-el="track">
             <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0 pb-12">
-              <li className="w-[150px]">
+              <li className="w-[200px]">
                 <div className="h-full flex flex-col items-center justify-center gap-3 w-[200px]">
-                  <img src={foodImg1} className="w-[150px]" alt="" />
+                  <img src={foodImg1} className="w-[200px]" alt="" />
                   <p className="text-[18px] font-bold">
                     American Fried Chicken
                   </p>
                 </div>
               </li>
-              <li className="w-[150px]">
+              <li className="w-[200px]">
                 <div className="h-full flex flex-col items-center justify-center gap-3 w-[200px]">
-                  <img src={foodImg2} className="w-[150px]" alt="" />
+                  <img src={foodImg2} className="w-[200px]" alt="" />
                   <p className="text-[18px] font-bold">Biriyani</p>
                 </div>
               </li>
-              <li className="w-[150px]">
+              <li className="w-[200px]">
                 <div className="h-full flex flex-col items-center justify-center gap-3 w-[200px]">
-                  <img src={foodImg3} className="w-[150px]" alt="" />
+                  <img src={foodImg3} className="w-[200px]" alt="" />
                   <p className="text-[18px] font-bold">Chicken Gravy</p>
                 </div>
               </li>
-              <li className="w-[150px]">
+              <li className="w-[200px]">
                 <div className="h-full flex flex-col items-center justify-center gap-3 w-[200px]">
-                  <img src={foodImg4} className="w-[150px]" alt="" />
+                  <img src={foodImg4} className="w-[200px]" alt="" />
                   <p className="text-[18px] font-bold">Curd Rice</p>
                 </div>
               </li>
-              <li className="w-[150px]">
+              <li className="w-[200px]">
                 <div className="h-full flex flex-col items-center justify-center gap-3 w-[200px]">
-                  <img src={foodImg5} className="w-[150px]" alt="" />
+                  <img src={foodImg5} className="w-[200px]" alt="" />
                   <p className="text-[18px] font-bold">Garlic Bread</p>
                 </div>
               </li>
-              <li className="w-[150px]">
+              <li className="w-[200px]">
                 <div className="h-full flex flex-col items-center justify-center gap-3 w-[200px]">
-                  <img src={foodImg6} className="w-[150px]" alt="" />
+                  <img src={foodImg6} className="w-[200px]" alt="" />
                   <p className="text-[18px] font-bold">Pasta</p>
                 </div>
               </li>
-              <li className="w-[150px]">
+              <li className="w-[200px]">
                 <div className="h-full flex flex-col items-center justify-center gap-3 w-[200px]">
-                  <img src={foodImg7} className="w-[150px]" alt="" />
+                  <img src={foodImg7} className="w-[200px]" alt="" />
                   <p className="text-[18px] font-bold">Pizza</p>
                 </div>
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* BLOG PAGE */}
+      <div className="blogContents flex flex-col w-full md:w-10/12 mx-auto py-10">
+        <p className="text-center font-semibold text-[20px]">Latest News</p>
+        <p className="text-center font-bold text-[22px] uppercase py-2">
+          Our Latest Food News
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 w-full md:w-10/12 py-5 mx-auto">
+          <div
+            className="cardCont flex flex-col m-4 shadow-lg cursor-pointer"
+            onClick={() => navigate("/a-food-court-for-every-craving")}
+          >
+            <img
+              src={blog1Cover}
+              alt=""
+              className="rounded w-[100] h-60 object-cover"
+            />
+            <div className="flex m-2 items-center justify-around">
+              <div className="date bg-[#5a2104] px-5 py-3 rounded-lg text-center">
+                <p className="text-white font-bold text-[22px]">19</p>
+                <p className="text-white font-bold text-[12px] m-0">Mar</p>
+              </div>
+              <div className="byWhom flex gap-1">
+                {" "}
+                <ShieldUser /> Admin
+              </div>
+              <div className="tag flex gap-1">
+                {" "}
+                <Tags /> Chicken
+              </div>
+            </div>
+            <div className="title line-clamp-2 pl-3 text-black font-bold text-[19px]">
+              A Food Court for Every Craving: Exploring the Best Eateries Under
+              One Roof
+            </div>
+            <div className="readMoreBtn text-center flex items-center justify-center gap-3 bg-[#5a2104] py-2 mt-3 rounded text-white font-bold uppercase">
+              Read More <TrendingUp />
+            </div>
+          </div>
+          <div className="cardCont flex flex-col m-4 shadow-lg">
+            <img
+              src={blog1Cover}
+              alt=""
+              className="rounded w-[100] h-60 object-cover"
+            />
+            <div className="flex m-2 items-center justify-around">
+              <div className="date bg-[#5a2104] px-5 py-3 rounded-lg text-center">
+                <p className="text-white font-bold text-[22px]">28</p>
+                <p className="text-white font-bold text-[12px] m-0">Mar</p>
+              </div>
+              <div className="byWhom">Admin</div>
+              <div className="tag">Chicken</div>
+            </div>
+            <div className="title line-clamp-2 pl-3 text-black font-bold text-[19px]">
+              Crispy & Crunchy: The Ultimate Guide to Fried Chicken (American,
+              Korean & More!)
+            </div>
+            <div className="readMoreBtn text-center bg-[#5a2104] py-2 mt-3 rounded text-white font-bold uppercase">
+              Read More
+            </div>
           </div>
         </div>
       </div>

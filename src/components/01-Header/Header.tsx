@@ -31,7 +31,7 @@ const Header: React.FC = () => {
     <div className="w-full">
       <div
         className={`w-full fixed left-0 z-50 transition-all duration-300 ${
-          isScrolled ? "top-3 bg-[#5a2104]" : "top-[20px] bg-transparent"
+          isScrolled ? "top-1 bg-[#5a2104]" : "top-[20px] bg-transparent"
         }`}
       >
         <div
@@ -45,25 +45,25 @@ const Header: React.FC = () => {
             </div>
             <div className="hidden lg:flex w-[90%] justify-center gap-x-10">
               <div
-                className="text-[20px] cursor-pointer mt-2 font-semibold text-white underline-animation"
+                className="text-[20px] cursor-pointer  font-semibold text-white underline-animation"
                 onClick={() => handleNavigation("/")}
               >
                 Home
               </div>
               <div
-                className="text-[20px] cursor-pointer mt-2 font-semibold text-white underline-animation"
+                className="text-[20px] cursor-pointer  font-semibold text-white underline-animation"
                 onClick={() => handleNavigation("/about")}
               >
                 About
               </div>
               <div
-                className="text-[20px] cursor-pointer mt-2 font-semibold text-white underline-animation"
+                className="text-[20px] cursor-pointer  font-semibold text-white underline-animation"
                 onClick={() => handleNavigation("/menu")}
               >
                 Menu
               </div>
               <div
-                className="text-[20px] cursor-pointer mt-2 font-semibold text-white underline-animation"
+                className="text-[20px] cursor-pointer  font-semibold text-white underline-animation"
                 onClick={() => handleNavigation("/contact")}
               >
                 Contact
