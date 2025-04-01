@@ -9,34 +9,35 @@ const Contact: React.FC = () => {
       <div className="contactPageCont01 flex lg:flex-row flex-col items-center justify-center h-[70vh] bg-cover bg-center text-white overflow-auto"></div>
 
       <div className="flex lg:flex-row flex-col w-full md:w-10/12 mx-auto py-10">
-        <div className="cardContacts flex flex-1 flex-col m-5 items-center border-1 border-[#ff0000] p-4 rounded text-center">
-          <div className="iconCont border-1 border-[#ff0000] p-3 rounded">
-            <LocateIcon />
+        <div className="cardContacts flex flex-1 flex-col m-5 items-center border-1 border-[#f3f4f6] p-4 rounded text-center">
+          <div className="iconCont border-1 border-[#f3f4f6] p-3 rounded">
+            <LocateIcon size={40} />
           </div>
           <p className="text-black font-bold text-[22px]">Our Address</p>
           <p className="text-[16px]">
-            No.1 , Selva Nagar, Seelanaickenpatty, Salem, Tamil Nadu, 636201.
+            No.1, Selva Nagar, Seelanaickenpatty, Salem, Tamil Nadu, 636201.
           </p>
         </div>
-        <div className="cardContacts flex flex-1 flex-col m-5 items-center border-1 border-[#ff0000] p-4 rounded text-center">
-          <div className="iconCont border-1 border-[#ff0000] p-3 rounded">
-            <MailIcon />
+        <div className="cardContacts flex flex-1 flex-col m-5 items-center border-1 border-[#f3f4f6] p-4 rounded text-center">
+          <div className="iconCont border-1 border-[#f3f4f6] p-3 rounded">
+            <MailIcon size={40} />
           </div>
           <p className="text-black font-bold text-[22px]">Our Mail</p>
           <p className="text-[16px]">orders@matchpointsalem.com</p>
+          <p>24/7 priority support.</p>
         </div>
-        <div className="cardContacts flex flex-1 flex-col m-5 items-center border-1 border-[#ff0000] p-4 rounded text-center">
-          <div className="iconCont border-1 border-[#ff0000] p-3 rounded">
-            <PhoneIcon />
+        <div className="cardContacts flex flex-1 flex-col m-5 items-center border-1 border-[#f3f4f6] p-4 rounded text-center">
+          <div className="iconCont border-1 border-[#f3f4f6] p-3 rounded">
+            <PhoneIcon size={40} />
           </div>
           <p className="text-black font-bold text-[22px]">Mobile Number</p>
           <p className="text-[16px]">+91 86673 55490</p>
 
           <p className="text-[16px]">24/7 priority support.</p>
         </div>
-        <div className="cardContacts flex flex-1 flex-col m-5 items-center border-1 border-[#ff0000] p-4 rounded text-center">
-          <div className="iconCont border-1 border-[#ff0000] p-3 rounded">
-            <Clock />
+        <div className="cardContacts flex flex-1 flex-col m-5 items-center border-1 border-[#f3f4f6] p-4 rounded text-center">
+          <div className="iconCont border-1 border-[#f3f4f6] p-3 rounded">
+            <Clock size={40} />
           </div>
           <p className="text-black font-bold text-[22px]">Opening Hours</p>
           <p className="text-[16px]">

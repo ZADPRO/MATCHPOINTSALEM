@@ -20,7 +20,7 @@
 }
 
 @media (max-width: 640px) {
-  .homePageContainer01 {
+  .blogPage1Cover {
     background: url("../../assets/homePage/homeMobile.jpg") no-repeat center;
     background-size: cover;
   }
@@ -35,7 +35,7 @@
 
 @media (max-width: 640px) {
   .aboutPageCont01 {
-    background: url("../../assets/homePage/homeMobile.jpg") no-repeat center;
+    background: url("../../assets/home/mobAbout.jpg") no-repeat center;
     background-size: cover;
   }
 }
@@ -49,7 +49,7 @@
 
 @media (max-width: 640px) {
   .menuPageCont01 {
-    background: url("../../assets/homePage/homeMobile.jpg") no-repeat center;
+    background: url("../../assets/home/mobMenu.jpg") no-repeat center;
     background-size: cover;
   }
 }
@@ -63,7 +63,7 @@
 
 @media (max-width: 640px) {
   .contactPageCont01 {
-    background: url("../../assets/homePage/homeMobile.jpg") no-repeat center;
+    background: url("../../assets/home/mobContact.jpg") no-repeat center;
     background-size: cover;
   }
 }
@@ -77,7 +77,11 @@
 
 @media (max-width: 640px) {
   .overallImgBrands {
-    background: url("../../assets/home/brandss.jpg") no-repeat center;
+    background: url("../../assets/home/mobBrands.jpg") no-repeat center;
     background-size: cover;
   }
+}
+
+.cardContacts {
+  background-color: #f3f4f6;
 }

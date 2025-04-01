@@ -33,6 +33,7 @@ import foodImg7 from "../../assets/homePage/pizza.png";
 // import temp1 from "../../assets/blog/temp.png";
 
 import blog1Cover from "../../assets/blog/blog1Cover.jpg";
+import blog2Cover from "../../assets/blog/blog2.jpg";
 import { ShieldUser, Tags, TrendingUp } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
@@ -205,25 +206,25 @@ const Home: React.FC = () => {
           <div data-glide-el="track">
             <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0 items-center justify-content-center">
               <li>
-                <img src={meatEat} className="lg:w-100" alt="" />
+                <img src={meatEat} className="lg:w-150" alt="" />
               </li>
               <li>
-                <img src={saiVeg} className="lg:w-100" alt="" />{" "}
+                <img src={saiVeg} className="lg:w-150" alt="" />{" "}
               </li>
               <li>
-                <img src={ceylonKadai} className="lg:w-100" alt="" />{" "}
+                <img src={ceylonKadai} className="lg:w-150" alt="" />{" "}
               </li>
               <li>
-                <img src={chillax} className="lg:w-100" alt="" />{" "}
+                <img src={chillax} className="lg:w-150" alt="" />{" "}
               </li>
               <li>
-                <img src={italianJob} className="lg:w-100" alt="" />{" "}
+                <img src={italianJob} className="lg:w-150" alt="" />{" "}
               </li>
               <li>
-                <img src={yarnbird} className="lg:w-100" alt="" />{" "}
+                <img src={yarnbird} className="lg:w-150" alt="" />{" "}
               </li>
               <li>
-                <img src={texMex} className="lg:w-100" alt="" />{" "}
+                <img src={texMex} className="lg:w-150" alt="" />{" "}
               </li>
             </ul>
           </div>
@@ -361,9 +362,12 @@ const Home: React.FC = () => {
               Read More <TrendingUp />
             </div>
           </div>
-          <div className="cardCont flex flex-col m-4 shadow-lg">
+          <div
+            className="cardCont flex flex-col m-4 shadow-lg cursor-pointer"
+            onClick={() => navigate("/crispy-and-crunchy")}
+          >
             <img
-              src={blog1Cover}
+              src={blog2Cover}
               alt=""
               className="rounded w-[100] h-60 object-cover"
             />
@@ -372,15 +376,21 @@ const Home: React.FC = () => {
                 <p className="text-white font-bold text-[22px]">28</p>
                 <p className="text-white font-bold text-[12px] m-0">Mar</p>
               </div>
-              <div className="byWhom">Admin</div>
-              <div className="tag">Chicken</div>
+              <div className="byWhom flex gap-1">
+                {" "}
+                <ShieldUser /> Admin
+              </div>
+              <div className="tag flex gap-1">
+                {" "}
+                <Tags /> Chicken
+              </div>
             </div>
             <div className="title line-clamp-2 pl-3 text-black font-bold text-[19px]">
               Crispy & Crunchy: The Ultimate Guide to Fried Chicken (American,
               Korean & More!)
             </div>
-            <div className="readMoreBtn text-center bg-[#5a2104] py-2 mt-3 rounded text-white font-bold uppercase">
-              Read More
+            <div className="readMoreBtn text-center flex items-center justify-center gap-3 bg-[#5a2104] py-2 mt-3 rounded text-white font-bold uppercase">
+              Read More <TrendingUp />
             </div>
           </div>
         </div>
