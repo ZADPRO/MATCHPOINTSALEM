@@ -67,3 +67,17 @@
     background-size: cover;
   }
 }
+
+.overallImgBrands {
+  background: url("../../assets/home/brandss.jpg") no-repeat center;
+  background-size: cover;
+  background-position: center;
+  scrollbar-width: none;
+}
+
+@media (max-width: 640px) {
+  .overallImgBrands {
+    background: url("../../assets/home/brandss.jpg") no-repeat center;
+    background-size: cover;
+  }
+}

@@ -44,7 +44,7 @@ const Home: React.FC = () => {
       autoplay: 1,
       animationDuration: 2500,
       animationTimingFunc: "linear",
-      perView: 4,
+      perView: 3,
       classes: {
         swipeable: "glide__swipeable",
         dragging: "glide__dragging",
@@ -72,8 +72,8 @@ const Home: React.FC = () => {
           perView: 2,
         },
         640: {
-          perView: 1,
-          gap: 36,
+          perView: 2,
+          gap: 6,
         },
       },
     }).mount();
@@ -87,7 +87,7 @@ const Home: React.FC = () => {
     const slider = new Glide(".glide-09", {
       type: "carousel",
       autoplay: 1,
-      animationDuration: 2500,
+      animationDuration: 1500,
       animationTimingFunc: "linear",
       perView: 5,
       classes: {
@@ -117,7 +117,7 @@ const Home: React.FC = () => {
           perView: 2,
         },
         640: {
-          perView: 1,
+          perView: 2,
           gap: 36,
         },
       },
@@ -193,37 +193,37 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="text-center py-10">
-        <p className="text-black text-[18px] font-semibold uppercase">
+      <div className="text-center py-10 overallImgBrands">
+        <p className="text-white text-[18px] font-semibold uppercase">
           Our Brands
         </p>
-        <p className="text-black text-[22px] font-bold py-3">
+        <p className="text-white text-[22px] font-bold py-3">
           "One food court, Endless possibilities"
         </p>
 
-        <div className="glide-08 relative w-full overflow-hidden bg-[#5a2104]">
+        <div className="glide-08 relative w-full overflow-hidden">
           <div data-glide-el="track">
             <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0 items-center justify-content-center">
               <li>
-                <img src={meatEat} className="w-100" alt="" />
+                <img src={meatEat} className="lg:w-100" alt="" />
               </li>
               <li>
-                <img src={saiVeg} className="w-100" alt="" />{" "}
+                <img src={saiVeg} className="lg:w-100" alt="" />{" "}
               </li>
               <li>
-                <img src={ceylonKadai} className="w-100" alt="" />{" "}
+                <img src={ceylonKadai} className="lg:w-100" alt="" />{" "}
               </li>
               <li>
-                <img src={chillax} className="w-100" alt="" />{" "}
+                <img src={chillax} className="lg:w-100" alt="" />{" "}
               </li>
               <li>
-                <img src={italianJob} className="w-100" alt="" />{" "}
+                <img src={italianJob} className="lg:w-100" alt="" />{" "}
               </li>
               <li>
-                <img src={yarnbird} className="w-100" alt="" />{" "}
+                <img src={yarnbird} className="lg:w-100" alt="" />{" "}
               </li>
               <li>
-                <img src={texMex} className="w-100" alt="" />{" "}
+                <img src={texMex} className="lg:w-100" alt="" />{" "}
               </li>
             </ul>
           </div>
@@ -262,7 +262,7 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="text-center py-10">
+      <div className="text-center py-2">
         <p className="text-black text-[18px] font-semibold uppercase">
           Popular Dishes
         </p>
@@ -323,7 +323,7 @@ const Home: React.FC = () => {
       </div>
 
       {/* BLOG PAGE */}
-      <div className="blogContents flex flex-col w-full md:w-10/12 mx-auto py-10">
+      <div className="blogContents flex flex-col w-full md:w-10/12 mx-auto py-4">
         <p className="text-center font-semibold text-[20px]">Latest News</p>
         <p className="text-center font-bold text-[22px] uppercase py-2">
           Our Latest Food News

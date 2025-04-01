@@ -1,6 +1,8 @@
 import { Clock, LocateIcon, MailIcon, PhoneIcon } from "lucide-react";
 import React from "react";
 
+import contactImg from "../../assets/contact/contactImg1.png";
+
 const Contact: React.FC = () => {
   return (
     <div>
@@ -44,7 +46,9 @@ const Contact: React.FC = () => {
       </div>
 
       <div className="flex lg:flex-row flex-col w-full md:w-9/12 mx-auto gap-5 py-10">
-        <div className="flex-1"></div>
+        <div className="flex-1">
+          <img src={contactImg} alt="" />
+        </div>
         <div className="flex-1">
           <div className="container px-4 mx-auto">
             <div className="mx-auto">

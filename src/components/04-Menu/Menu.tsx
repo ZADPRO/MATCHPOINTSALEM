@@ -1,6 +1,6 @@
 import React from "react";
 
-import chillax from "../../assets/menu/chillax1.jpg";
+import chillax from "../../assets/menu/chillax2.jpg";
 import ceylonKadai from "../../assets/menu/ceylonKadai.jpg";
 import italian from "../../assets/menu/italian.jpg";
 import saiveg from "../../assets/menu/saiveg.jpg";
