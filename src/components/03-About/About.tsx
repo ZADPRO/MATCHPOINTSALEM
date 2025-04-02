@@ -21,9 +21,9 @@ const About: React.FC = () => {
       </div>
 
       <div className="w-full md:w-10/12 mx-auto">
-        <div className="flex lg:flex-row flex-col gap-5">
+        <div className="flex lg:flex-row flex-col gap-5 items-center justify-center m-5">
           <div
-            className="text-start lg:pt-0 pt-40 flex-1 flex items-center"
+            className="text-start lg:pt-0 pt-10 flex-1 flex items-center"
             data-aos="fade-right"
           >
             <p
@@ -41,16 +41,16 @@ const About: React.FC = () => {
             </p>
           </div>
 
-          <div className="lg:mt-6 flex-1 flex" data-aos="">
+          <div className="lg:mt-6 flex-1 flex" data-aos="fade-left">
             <img
               src={aboutImg}
               alt="About Image"
-              className="w-full object-cover h-[300px] rounded-xl"
+              className="w-full object-cover h-[280px] rounded-xl"
             />
           </div>
         </div>
 
-        <div className="py-5">
+        <div className="py-5 m-5">
           <p className="text-[20px]">
             With seven distinct brands, each offering a unique taste experience,
             every visit is a new adventure:

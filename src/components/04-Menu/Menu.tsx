@@ -22,18 +22,43 @@ const Menu: React.FC = () => {
 
       <div className="m-3 w-full md:w-10/12 mx-auto">
         <div className="flex lg:flex-row flex-col gap-4 items-center justify-center my-3">
-          <img className="w-[92%] lg:w-[45%]" src={chillax} alt="" />
-          <img className="w-[92%] lg:w-[45%]" src={ceylonKadai} alt="" />
+          <img
+            className="w-[92%] lg:w-[45%]"
+            src={chillax}
+            alt=""
+            data-aos="flip-right"
+          />
+          <img
+            className="w-[92%] lg:w-[45%]"
+            src={ceylonKadai}
+            alt=""
+            data-aos="flip-left"
+          />
         </div>
         <div className="flex lg:flex-row flex-col gap-4 items-center justify-center my-3">
-          <img className="w-[92%] lg:w-[45%]" src={saiveg} alt="" />
-          <img className="w-[92%] lg:w-[45%]" src={texMex} alt="" />
+          <img
+            className="w-[92%] lg:w-[45%]"
+            src={saiveg}
+            alt=""
+            data-aos="flip-right"
+          />
+          <img
+            className="w-[92%] lg:w-[45%]"
+            src={texMex}
+            alt=""
+            data-aos="flip-left"
+          />
         </div>
         <div className="flex items-center justify-center my-6">
-          <img src={italian} className="w-[92%]" alt="" />
+          <img src={italian} className="w-[92%]" alt="" data-aos="flip-right" />
         </div>
         <div className="flex items-center justify-center my-6">
-          <img src={yarnBird} className="w-[92%]" alt="" />
+          <img
+            src={yarnBird}
+            className="w-[92%]"
+            alt=""
+            data-aos="flip-right"
+          />
         </div>
       </div>
     </div>

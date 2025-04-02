@@ -333,7 +333,10 @@ const Home: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 w-full md:w-10/12 py-5 mx-auto">
           <div
             className="cardCont flex flex-col m-4 shadow-lg cursor-pointer"
-            onClick={() => navigate("/a-food-court-for-every-craving")}
+            onClick={() => {
+              navigate("/a-food-court-for-every-craving");
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
           >
             <img
               src={blog1Cover}
@@ -364,7 +367,10 @@ const Home: React.FC = () => {
           </div>
           <div
             className="cardCont flex flex-col m-4 shadow-lg cursor-pointer"
-            onClick={() => navigate("/crispy-and-crunchy")}
+            onClick={() => {
+              navigate("/crispy-and-crunchy");
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
           >
             <img
               src={blog2Cover}
