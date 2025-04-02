@@ -5,9 +5,11 @@ import blog1Img1 from "../../assets/blog/blog11.jpg";
 import blog1Img2 from "../../assets/blog/blog12.jpg";
 // import blog1Img3 from "../../assets/blog/blog13.jpg";
 
+import blog2Cover from "../../assets/blog/blog2.jpg";
+
 const Blog1: React.FC = () => {
   return (
-    <div>
+    <div className="bg-gray-100">
       <div className="blogPage1Cover flex flex-col items-center justify-center h-[70vh] bg-cover bg-center text-white overflow-auto">
         <h1 className="text-3xl lg:text-5xl font-bold mb-4">Blog Details</h1>
         <p className="text-md lg:text-xl max-w-2xl mx-auto">
@@ -16,8 +18,8 @@ const Blog1: React.FC = () => {
         </p>
       </div>
 
-      <div className="flex lg:flex-row flex-col text-justify w-full md:w-10/12 mx-auto my-5">
-        <div className="mainCont w-[70%]">
+      <div className="flex lg:flex-row flex-col text-justify w-full md:w-10/12 mx-auto my-5 justify-between">
+        <div className="mainCont lg:w-[70%] w-full">
           <img
             src={blog1Img1}
             alt=""
@@ -40,7 +42,21 @@ const Blog1: React.FC = () => {
             best under one roof. "
           </p>
         </div>
-        <div className="subCont w-[30%]"></div>
+        <div className="subCont lg:w-[26%] w-full">
+          <div className="card">
+            <p>Recent Blogs</p>
+            <div className="flex gap-3 my-3 px-8 py-6 bg-white rounded-lg">
+              <img src={blog2Cover} className="w-[80px]" alt="" />
+              <div className="flex flex-col">
+                <p>28 - Mar - 2025</p>
+                <p className="line-clamp-2">
+                  Crispy & Crunchy: The Ultimate Guide to Fried Chicken
+                  (American, Korean & More!){" "}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="w-full md:w-10/12 mx-auto text-justify">
