@@ -1,9 +1,9 @@
 import React from "react";
 
-import blog1Cover from "../../assets/blog/blog2.jpg";
+// import blog1Cover from "../../assets/blog/blog2.jpg";
 import blog1Img1 from "../../assets/blog/blog21.jpg";
-import blog1Img2 from "../../assets/blog/blog22.jpg";
-import blog1Img3 from "../../assets/blog/blog23.jpg";
+// import blog1Img2 from "../../assets/blog/blog22.jpg";
+// import blog1Img3 from "../../assets/blog/blog23.jpg";
 
 import blog2Cover from "../../assets/blog/blog2.jpg";
 
