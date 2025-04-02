@@ -195,7 +195,7 @@ const Home: React.FC = () => {
       </div>
 
       <div className="text-center py-10 overallImgBrands">
-        <p className="text-white text-[18px] font-semibold uppercase">
+        <p className="text-white text-[25px] font-semibold fontLily">
           Our Brands
         </p>
         <p className="text-white text-[22px] font-bold py-3">
@@ -239,10 +239,10 @@ const Home: React.FC = () => {
             alt=""
           />
           <div className="lg:w-1/2 px-5 py-6">
-            <p className="text-black text-[18px] font-semibold uppercase">
+            <p className="text-black text-[25px] fontLily font-bold">
               About Us
             </p>
-            <p className="text-black fontFam text-[22px] font-bold py-3">
+            <p className="text-black text-[22px] font-bold py-3">
               "Good food. Great memories. All under one roof."
             </p>
             <p className="text-center text-black px-4">
@@ -264,7 +264,7 @@ const Home: React.FC = () => {
       </div>
 
       <div className="text-center py-2">
-        <p className="text-black text-[18px] font-semibold uppercase">
+        <p className="text-black text-[25px] fontLily font-bold">
           Popular Dishes
         </p>
         <p className="text-black text-[22px] font-bold py-3">
@@ -325,7 +325,9 @@ const Home: React.FC = () => {
 
       {/* BLOG PAGE */}
       <div className="blogContents flex flex-col w-full md:w-10/12 mx-auto py-4">
-        <p className="text-center font-semibold text-[20px]">Latest News</p>
+        <p className="text-black text-[25px] fontLily font-bold text-center">
+          Latest News
+        </p>
         <p className="text-center font-bold text-[22px] uppercase py-2">
           Our Latest Food News
         </p>

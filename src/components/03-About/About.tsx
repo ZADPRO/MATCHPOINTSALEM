@@ -3,6 +3,8 @@ import React from "react";
 import aboutImg from "../../assets/about/about1.jpg";
 import aboutImg2 from "../../assets/about/about2.jpg";
 
+import img2 from "../../assets/home/about.jpg";
+
 const About: React.FC = () => {
   return (
     <div>
@@ -33,9 +35,9 @@ const About: React.FC = () => {
               className="text-[18px] text-justify"
               style={{ textIndent: "2rem" }}
             >
-              <span className="font-bold fontFam">Welcome to Match Point,</span>{" "}
-              where flavours from around the world come together in one vibrant
-              dining destination. More than just a food court, we are a culinary
+              <span className="font-bold">Welcome to Match Point,</span> where
+              flavours from around the world come together in one vibrant dining
+              destination. More than just a food court, we are a culinary
               experience - a place where food lovers can indulge in a variety of
               cuisines, crafted with passion and quality. Whether you're craving
               sizzling meats, wholesome vegetarian dishes, indulgent desserts,
@@ -54,31 +56,31 @@ const About: React.FC = () => {
         </div>
 
         <div className="py-5 m-5">
-          <p className="text-[18px]">
+          <p className="text-[18px] font-bold text-black">
             With seven distinct brands, each offering a unique taste experience,
             every visit is a new adventure:
           </p>
           <ul className="list-disc pl-5 text-[18px] py-3">
-            <li>
+            <li className="py-2">
               From flame-grilled meats at Meat and Eat to wholesome vegetarian
               delights at Sai Veg Restaurant, Match Point offers flavours for
               every craving.
             </li>
-            <li>
+            <li className="py-2">
               Savour bold South Asian spices at Ceylon Kadai Non-Veg, indulge in
               sweet treats at Chillax, and enjoy authentic Italian dishes at
               Italian Job.
             </li>
-            <li>
+            <li className="py-2">
               Craving fried chicken? Yardbird serves up crispy American and
               Korean-style bites, while Tex-Mex Delights brings sizzling fajitas
               and cheesy quesadillas. A world of flavours, all in one place!
             </li>
-            <li>
+            <li className="py-2">
               At Match Point, we celebrate variety, quality, and innovation,
               ensuring every meal is a delightful experience.
             </li>
-            <li>
+            <li className="py-2">
               Whether you're dining in with family and friends or grabbing a
               quick bite, we promise a memorable feast that keeps you coming
               back for more.
@@ -86,92 +88,102 @@ const About: React.FC = () => {
           </ul>
         </div>
 
-        <img src={aboutImg2} alt="" className="h-[70vh] w-full object-cover" />
+        <img
+          src={aboutImg2}
+          alt=""
+          className="h-[70vh] w-full object-cover rounded"
+        />
 
-        <div className="py-3 px-5">
-          <p className="text-black text-center text-[18px] font-semibold uppercase">
+        <div className="py-10 px-5">
+          <p className="text-black text-[25px] text-center fontLily font-bold">
             Why Choose Us?
           </p>
-          <p className="text-black text-[22px] text-center font-bold py-3">
+          <p className="text-black text-[22px] text-center font-bold py-1">
             "Where taste meets quality and variety meets comfort."{" "}
           </p>
-          <div className="w-full md:w-6/12 mx-auto">
-            <ul
-              aria-label="Changelog feed"
-              role="feed"
-              className="relative flex flex-col gap-2 py-12 pl-6"
+          <div className=" flex lg:flex-row flex-col items-center justify-center ">
+            <div
+              className="text-start lg:pt-0 pt-20 px-6 lg:px-20 flex-1"
+              data-aos="fade-right"
             >
-              <li
-                role="article"
-                data-aos="fade-up"
-                className="relative pl-6 before:absolute before:left-0 before:top-2 before:z-10 before:h-2 before:w-2 before:-translate-x-1/2 before:rounded-full before:bg-[#5a2104] before:ring-2 before:ring-white"
-              >
-                <div className="flex flex-col flex-1 gap-4">
-                  <h4 className="text-lg font-medium text-[#5a2104]">
-                    Diverse Options:{" "}
-                  </h4>
-                  <p className=" text-black">
-                    A wide range of cuisines to suit every palate.
-                  </p>
-                </div>
-              </li>
-              <li
-                role="article"
-                data-aos="fade-up"
-                className="relative pl-6 before:absolute before:left-0 before:top-2 before:z-10 before:h-2 before:w-2 before:-translate-x-1/2 before:rounded-full before:bg-[#5a2104] before:ring-2 before:ring-white"
-              >
-                <div className="flex flex-col flex-1 gap-4">
-                  <h4 className="text-lg font-medium text-[#5a2104]">
-                    Fresh Ingredients:{" "}
-                  </h4>
-                  <p className=" text-black">
-                    Quality you can taste in every bite.
-                  </p>
-                </div>
-              </li>
-              <li
-                role="article"
-                data-aos="fade-up"
-                className="relative pl-6 before:absolute before:left-0 before:top-2 before:z-10 before:h-2 before:w-2 before:-translate-x-1/2 before:rounded-full before:bg-[#5a2104] before:ring-2 before:ring-white"
-              >
-                <div className="flex flex-col flex-1 gap-4">
-                  <h4 className="text-lg font-medium text-[#5a2104]">
-                    Family-Friendly Ambiance:{" "}
-                  </h4>
-                  <p className=" text-black">
-                    Perfect for families, friends, and celebrations.
-                  </p>
-                </div>
-              </li>
-              <li
-                role="article"
-                data-aos="fade-up"
-                className="relative pl-6 before:absolute before:left-0 before:top-2 before:z-10 before:h-2 before:w-2 before:-translate-x-1/2 before:rounded-full before:bg-[#5a2104] before:ring-2 before:ring-white"
-              >
-                <div className="flex flex-col flex-1 gap-4">
-                  <h4 className="text-lg font-medium text-[#5a2104]">
-                    Convenient Locations:{" "}
-                  </h4>
-                  <p className=" text-black">
-                    Multiple branches for easy access.
-                  </p>
-                </div>
-              </li>
-              <li
-                role="article"
-                data-aos="fade-up"
-                className="relative pl-6 before:absolute before:left-0 before:top-2 before:z-10 before:h-2 before:w-2 before:-translate-x-1/2 before:rounded-full before:bg-[#5a2104] before:ring-2 before:ring-white"
-              >
-                <div className="flex flex-col flex-1 gap-4">
-                  <h4 className="text-lg font-medium text-[#5a2104]">
-                    Customer-Centric:{" "}
-                  </h4>
-                  <p className=" text-black">
-                    We prioritize your satisfaction with exceptional service.
-                  </p>
-                </div>
-              </li>
-            </ul>
+              <div className="w-full">
+                <ul
+                  aria-label="Changelog feed"
+                  role="feed"
+                  className="relative flex flex-col gap-2 py-12 pl-6"
+                >
+                  <li
+                    role="article"
+                    className="relative pl-6 before:absolute before:left-0 before:top-2 before:z-10 before:h-2 before:w-2 before:-translate-x-1/2 before:rounded-full before:bg-[#5a2104] before:ring-2 before:ring-white"
+                  >
+                    <div className="flex flex-col flex-1 gap-4">
+                      <h4 className="text-lg font-medium text-[#5a2104]">
+                        Diverse Options:{" "}
+                      </h4>
+                      <p className=" text-black">
+                        A wide range of cuisines to suit every palate.
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    role="article"
+                    className="relative pl-6 before:absolute before:left-0 before:top-2 before:z-10 before:h-2 before:w-2 before:-translate-x-1/2 before:rounded-full before:bg-[#5a2104] before:ring-2 before:ring-white"
+                  >
+                    <div className="flex flex-col flex-1 gap-4">
+                      <h4 className="text-lg font-medium text-[#5a2104]">
+                        Fresh Ingredients:{" "}
+                      </h4>
+                      <p className=" text-black">
+                        Quality you can taste in every bite.
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    role="article"
+                    className="relative pl-6 before:absolute before:left-0 before:top-2 before:z-10 before:h-2 before:w-2 before:-translate-x-1/2 before:rounded-full before:bg-[#5a2104] before:ring-2 before:ring-white"
+                  >
+                    <div className="flex flex-col flex-1 gap-4">
+                      <h4 className="text-lg font-medium text-[#5a2104]">
+                        Family-Friendly Ambiance:{" "}
+                      </h4>
+                      <p className=" text-black">
+                        Perfect for families, friends, and celebrations.
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    role="article"
+                    className="relative pl-6 before:absolute before:left-0 before:top-2 before:z-10 before:h-2 before:w-2 before:-translate-x-1/2 before:rounded-full before:bg-[#5a2104] before:ring-2 before:ring-white"
+                  >
+                    <div className="flex flex-col flex-1 gap-4">
+                      <h4 className="text-lg font-medium text-[#5a2104]">
+                        Convenient Locations:{" "}
+                      </h4>
+                      <p className=" text-black">
+                        Multiple branches for easy access.
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    role="article"
+                    className="relative pl-6 before:absolute before:left-0 before:top-2 before:z-10 before:h-2 before:w-2 before:-translate-x-1/2 before:rounded-full before:bg-[#5a2104] before:ring-2 before:ring-white"
+                  >
+                    <div className="flex flex-col flex-1 gap-4">
+                      <h4 className="text-lg font-medium text-[#5a2104]">
+                        Customer-Centric:{" "}
+                      </h4>
+                      <p className=" text-black">
+                        We prioritize your satisfaction with exceptional
+                        service.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="lg:mt-6 flex-1" data-aos="">
+              <img src={img2} alt="" />
+            </div>
           </div>
         </div>
 

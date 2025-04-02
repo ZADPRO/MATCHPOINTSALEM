@@ -1,7 +1,13 @@
 @import "tailwindcss";
 
 .fontFam {
-  /* font-family: "Lily Script One", system-ui; */
-  /* font-family: "Squada One", sans-serif; */
-  /* font-family: "Caveat", cursive; */
+  font-family: "Caveat", cursive;
+}
+
+.fontLily {
+  font-family: "Lily Script One", system-ui;
+}
+
+.fontSquada {
+  font-family: "Squada One", sans-serif;
 }
