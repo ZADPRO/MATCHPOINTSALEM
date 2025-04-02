@@ -341,7 +341,7 @@ const Home: React.FC = () => {
             <img
               src={blog1Cover}
               alt=""
-              className="rounded w-[100] h-60 object-cover"
+              className="rounded h-60 object-cover"
             />
             <div className="flex m-2 items-center justify-around">
               <div className="date bg-[#5a2104] px-5 py-3 rounded-lg text-center">
@@ -375,7 +375,7 @@ const Home: React.FC = () => {
             <img
               src={blog2Cover}
               alt=""
-              className="rounded w-[100] h-60 object-cover"
+              className="rounded h-60 object-cover"
             />
             <div className="flex m-2 items-center justify-around">
               <div className="date bg-[#5a2104] px-5 py-3 rounded-lg text-center">
