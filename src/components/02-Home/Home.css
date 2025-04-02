@@ -1,5 +1,5 @@
 .homePageContainer01 {
-  background: url("../../assets/homePage/home2.jpg") no-repeat center;
+  background: url("../../assets/home/home13.jpg") no-repeat center;
   background-size: cover;
   background-position: center;
   scrollbar-width: none;
@@ -7,7 +7,7 @@
 
 @media (max-width: 640px) {
   .homePageContainer01 {
-    background: url("../../assets/homePage/homeMobile.jpg") no-repeat center;
+    background: url("../../assets/home/homeMobile.jpg") no-repeat center;
     background-size: cover;
   }
 }

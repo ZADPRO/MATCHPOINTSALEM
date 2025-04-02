@@ -133,7 +133,7 @@ const Home: React.FC = () => {
     <div>
       <div className="homePageContainer01 flex lg:flex-row flex-col items-center justify-center h-screen bg-cover bg-center text-white overflow-auto">
         <div
-          className="text-start lg:pt-0 pt-40 px-6 lg:px-20 flex-1"
+          className="text-start lg:pt-0 pt-30 px-6 lg:px-20 flex-1"
           data-aos="fade-right"
         >
           <h1 className="text-3xl lg:text-5xl font-bold mb-4">
@@ -147,11 +147,11 @@ const Home: React.FC = () => {
           </p>
         </div>
         <div className="lg:mt-6 flex-1" data-aos="fade-left">
-          <img
+          {/* <img
             src={burger}
             alt="Home Banner"
             className="w-full max-w-[500px] rounded-lg"
-          />
+          /> */}
         </div>
       </div>
 
@@ -163,7 +163,7 @@ const Home: React.FC = () => {
           <div className="absolute w-1/2 left-2 p-4 rounded shadow">
             <p className="text-white">On This Week</p>
             <p className="text-white font-bold text-[25px] uppercase">
-              Spicy Fried Chicken
+              Korean Spicy Wings
             </p>
             <p className="text-white">Limited Time Offer</p>
           </div>
@@ -175,7 +175,7 @@ const Home: React.FC = () => {
           <div className="absolute w-1/2 left-2 p-4 rounded shadow">
             <p className="text-white">On This Week</p>
             <p className="text-white font-bold text-[25px] uppercase">
-              Today Special Food{" "}
+              Thandoori - Grill
             </p>
             <p className="text-white">Limited Time Offer</p>
           </div>
@@ -187,7 +187,7 @@ const Home: React.FC = () => {
           <div className="absolute w-1/2 left-2 p-4 rounded shadow">
             <p className="text-white">On This Week</p>
             <p className="text-white font-bold text-[25px] uppercase">
-              Special Chicken Roll
+              Parotta
             </p>
             <p className="text-white">Limited Time Offer</p>
           </div>
