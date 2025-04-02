@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./Home.css";
 
-import burger from "../../assets/homePage/burgerImg3.png";
+// import burger from "../../assets/homePage/burgerImg3.png";
 
 import meatEat from "../../assets/restro/MeatEat.png";
 import saiVeg from "../../assets/restro/SAIVEG.png";
