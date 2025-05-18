@@ -13,6 +13,8 @@ import Home from "../02-Home/Home";
 import Contact from "../05-Contact/Contact";
 import Blog1 from "../10-Blogs/Blog1";
 import Blogs2 from "../10-Blogs/Blogs2";
+import Blog3 from "../10-Blogs/Blog3";
+import Blogs from "../10-Blogs/Blogs";
 
 const MainRoutes: React.FC = () => {
   function AppRoutes() {
@@ -26,6 +28,7 @@ const MainRoutes: React.FC = () => {
       "/blogs",
       "/a-food-court-for-every-craving",
       "/crispy-and-crunchy",
+      "/discover-matchpoint-salem",
     ];
     const showHeader = headerRoutes.includes(location.pathname);
 
@@ -36,9 +39,11 @@ const MainRoutes: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/menu" element={<Menu />} />
+          <Route path="/blogs" element={<Blogs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/a-food-court-for-every-craving" element={<Blog1 />} />
           <Route path="/crispy-and-crunchy" element={<Blogs2 />} />
+          <Route path="/discover-matchpoint-salem" element={<Blog3 />} />
         </Routes>
         <Footer />
       </div>

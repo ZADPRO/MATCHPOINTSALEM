@@ -65,6 +65,12 @@ const Header: React.FC = () => {
               </div>
               <div
                 className="text-[20px] cursor-pointer  font-semibold text-white underline-animation"
+                onClick={() => handleNavigation("/blogs")}
+              >
+                Blogs
+              </div>
+              <div
+                className="text-[20px] cursor-pointer  font-semibold text-white underline-animation"
                 onClick={() => handleNavigation("/contact")}
               >
                 Contact

@@ -1,8 +1,10 @@
 import React from "react";
 
 import logo from "../../assets/logo/logo3.png";
+import { useNavigate } from "react-router-dom";
 
 const Footer: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <footer className="w-full text-slate-500">
@@ -41,7 +43,10 @@ const Footer: React.FC = () => {
                 <ul>
                   <li className="mb-2 leading-6">
                     <a
-                      href="javascript:void(0)"
+                      onClick={() => {
+                        window.scrollTo(0, 0);
+                        navigate("/");
+                      }}
                       className="transition-colors text-[16px] text-black font-semibold duration-300 hover:text-[#5a2104] focus:text-[#5a2104] hover:font-bold"
                     >
                       Home
@@ -49,7 +54,10 @@ const Footer: React.FC = () => {
                   </li>
                   <li className="mb-2 leading-6">
                     <a
-                      href="javascript:void(0)"
+                      onClick={() => {
+                        window.scrollTo(0, 0);
+                        navigate("/about");
+                      }}
                       className="transition-colors text-[16px] text-black font-semibold duration-300 hover:text-[#5a2104] focus:text-[#5a2104] hover:font-bold"
                     >
                       About
@@ -57,16 +65,32 @@ const Footer: React.FC = () => {
                   </li>
                   <li className="mb-2 leading-6">
                     <a
-                      href="javascript:void(0)"
+                      onClick={() => {
+                        window.scrollTo(0, 0);
+                        navigate("/menu");
+                      }}
                       className="transition-colors text-[16px] text-black font-semibold duration-300 hover:text-[#5a2104] focus:text-[#5a2104] hover:font-bold"
                     >
                       Menu
                     </a>
                   </li>
-
                   <li className="mb-2 leading-6">
                     <a
-                      href="javascript:void(0)"
+                      onClick={() => {
+                        window.scrollTo(0, 0);
+                        navigate("/blogs");
+                      }}
+                      className="transition-colors text-[16px] text-black font-semibold duration-300 hover:text-[#5a2104] focus:text-[#5a2104] hover:font-bold"
+                    >
+                      Blogs
+                    </a>
+                  </li>
+                  <li className="mb-2 leading-6">
+                    <a
+                      onClick={() => {
+                        window.scrollTo(0, 0);
+                        navigate("/contact");
+                      }}
                       className="transition-colors text-[16px] text-black font-semibold duration-300 hover:text-[#5a2104] focus:text-[#5a2104] hover:font-bold"
                     >
                       Contact
@@ -74,6 +98,7 @@ const Footer: React.FC = () => {
                   </li>
                 </ul>
               </nav>
+
               <nav
                 className="col-span-2 md:col-span-4 lg:col-span-3"
                 aria-labelledby="footer-about-4-sub"
@@ -87,7 +112,10 @@ const Footer: React.FC = () => {
                 <ul>
                   <li className="mb-2 leading-6">
                     <a
-                      href="javascript:void(0)"
+                      onClick={() => {
+                        window.scrollTo(0, 0);
+                        navigate("/menu");
+                      }}
                       className="transition-colors text-[16px] text-black font-semibold duration-300 hover:text-[#5a2104] focus:text-[#5a2104] hover:font-bold"
                     >
                       Meat & Eat
@@ -95,7 +123,10 @@ const Footer: React.FC = () => {
                   </li>
                   <li className="mb-2 leading-6">
                     <a
-                      href="javascript:void(0)"
+                      onClick={() => {
+                        window.scrollTo(0, 0);
+                        navigate("/menu");
+                      }}
                       className="transition-colors text-[16px] text-black font-semibold duration-300 hover:text-[#5a2104] focus:text-[#5a2104] hover:font-bold"
                     >
                       Sai Veg Restaurant
@@ -103,7 +134,10 @@ const Footer: React.FC = () => {
                   </li>
                   <li className="mb-2 leading-6">
                     <a
-                      href="javascript:void(0)"
+                      onClick={() => {
+                        window.scrollTo(0, 0);
+                        navigate("/menu");
+                      }}
                       className="transition-colors text-[16px] text-black font-semibold duration-300 hover:text-[#5a2104] focus:text-[#5a2104] hover:font-bold"
                     >
                       Ceylon Kadai Non-Veg
@@ -111,7 +145,10 @@ const Footer: React.FC = () => {
                   </li>
                   <li className="mb-2 leading-6">
                     <a
-                      href="javascript:void(0)"
+                      onClick={() => {
+                        window.scrollTo(0, 0);
+                        navigate("/menu");
+                      }}
                       className="transition-colors text-[16px] text-black font-semibold duration-300 hover:text-[#5a2104] focus:text-[#5a2104] hover:font-bold"
                     >
                       Chillax - Ice Creams & Desserts
@@ -119,7 +156,10 @@ const Footer: React.FC = () => {
                   </li>
                   <li className="mb-2 leading-6">
                     <a
-                      href="javascript:void(0)"
+                      onClick={() => {
+                        window.scrollTo(0, 0);
+                        navigate("/menu");
+                      }}
                       className="transition-colors text-[16px] text-black font-semibold duration-300 hover:text-[#5a2104] focus:text-[#5a2104] hover:font-bold"
                     >
                       Italian Job - Pasta & Pizza
@@ -127,7 +167,10 @@ const Footer: React.FC = () => {
                   </li>
                   <li className="mb-2 leading-6">
                     <a
-                      href="javascript:void(0)"
+                      onClick={() => {
+                        window.scrollTo(0, 0);
+                        navigate("/menu");
+                      }}
                       className="transition-colors text-[16px] text-black font-semibold duration-300 hover:text-[#5a2104] focus:text-[#5a2104] hover:font-bold"
                     >
                       Yarnbird Fried Chicken
@@ -135,7 +178,10 @@ const Footer: React.FC = () => {
                   </li>
                   <li className="mb-2 leading-6">
                     <a
-                      href="javascript:void(0)"
+                      onClick={() => {
+                        window.scrollTo(0, 0);
+                        navigate("/menu");
+                      }}
                       className="transition-colors text-[16px] text-black font-semibold duration-300 hover:text-[#5a2104] focus:text-[#5a2104] hover:font-bold"
                     >
                       Tex-Mex Delights
