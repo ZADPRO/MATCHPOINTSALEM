@@ -1,11 +1,17 @@
 import React from "react";
 
-import chillax from "../../assets/menu/chillax2.jpg";
-import ceylonKadai from "../../assets/menu/ceylonKadai.jpg";
-import italian from "../../assets/menu/italian.jpg";
-import saiveg from "../../assets/menu/saiveg.jpg";
-import texMex from "../../assets/menu/texMex.jpg";
-import yarnBird from "../../assets/menu/yarnBird.jpg";
+import chillax1 from "../../assets/newMenu/chillax1.jpg";
+import chillax2 from "../../assets/newMenu/chillax2.jpg";
+import ceylon1 from "../../assets/newMenu/ceylon1.jpg";
+import ceylon2 from "../../assets/newMenu/ceylon2.jpg";
+import saiVeg1 from "../../assets/newMenu/saiveg1.jpg";
+import saiveg2 from "../../assets/newMenu/saiveg2.jpg";
+import texmex1 from "../../assets/newMenu/texmex1.jpg";
+import texmex2 from "../../assets/newMenu/texmex2.jpg";
+import italian1 from "../../assets/newMenu/italian1.jpg";
+import italian2 from "../../assets/newMenu/italian2.jpg";
+import yarnbird1 from "../../assets/newMenu/yarnbird1.jpg";
+import yarnbird2 from "../../assets/newMenu/yarnbird2.jpg";
 
 const Menu: React.FC = () => {
   return (
@@ -24,40 +30,95 @@ const Menu: React.FC = () => {
         <div className="flex lg:flex-row flex-col gap-4 items-center justify-center my-3">
           <img
             className="w-[92%] lg:w-[45%]"
-            src={chillax}
+            src={chillax1}
             alt=""
             data-aos="flip-right"
           />
           <img
             className="w-[92%] lg:w-[45%]"
-            src={ceylonKadai}
+            src={chillax2}
             alt=""
             data-aos="flip-left"
           />
         </div>
+      </div>
+      <div className="m-3 w-full md:w-10/12 mx-auto">
         <div className="flex lg:flex-row flex-col gap-4 items-center justify-center my-3">
           <img
             className="w-[92%] lg:w-[45%]"
-            src={saiveg}
+            src={ceylon1}
             alt=""
             data-aos="flip-right"
           />
           <img
             className="w-[92%] lg:w-[45%]"
-            src={texMex}
+            src={ceylon2}
             alt=""
             data-aos="flip-left"
           />
         </div>
-        <div className="flex items-center justify-center my-6">
-          <img src={italian} className="w-[92%]" alt="" data-aos="flip-right" />
-        </div>
-        <div className="flex items-center justify-center my-6">
+      </div>
+      <div className="m-3 w-full md:w-10/12 mx-auto">
+        <div className="flex lg:flex-row flex-col gap-4 items-center justify-center my-3">
           <img
-            src={yarnBird}
-            className="w-[92%]"
+            className="w-[92%] lg:w-[45%]"
+            src={saiVeg1}
             alt=""
             data-aos="flip-right"
+          />
+          <img
+            className="w-[92%] lg:w-[45%]"
+            src={saiveg2}
+            alt=""
+            data-aos="flip-left"
+          />
+        </div>
+      </div>
+      <div className="m-3 w-full md:w-10/12 mx-auto">
+        <div className="flex lg:flex-row flex-col gap-4 items-center justify-center my-3">
+          <img
+            className="w-[92%] lg:w-[45%]"
+            src={texmex1}
+            alt=""
+            data-aos="flip-right"
+          />
+          <img
+            className="w-[92%] lg:w-[45%]"
+            src={texmex2}
+            alt=""
+            data-aos="flip-left"
+          />
+        </div>
+      </div>
+      <div className="m-3 w-full md:w-10/12 mx-auto">
+        <div className="flex lg:flex-row flex-col gap-4 items-center justify-center my-3">
+          <img
+            className="w-[92%] lg:w-[45%]"
+            src={italian1}
+            alt=""
+            data-aos="flip-right"
+          />
+          <img
+            className="w-[92%] lg:w-[45%]"
+            src={italian2}
+            alt=""
+            data-aos="flip-left"
+          />
+        </div>
+      </div>
+      <div className="m-3 w-full md:w-10/12 mx-auto">
+        <div className="flex lg:flex-row flex-col gap-4 items-center justify-center my-3">
+          <img
+            className="w-[92%] lg:w-[45%]"
+            src={yarnbird1}
+            alt=""
+            data-aos="flip-right"
+          />
+          <img
+            className="w-[92%] lg:w-[45%]"
+            src={yarnbird2}
+            alt=""
+            data-aos="flip-left"
           />
         </div>
       </div>
