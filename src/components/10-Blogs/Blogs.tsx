@@ -38,7 +38,7 @@ const blogData = [
   },
   {
     cover: blog4Cover,
-    date: { day: "12", month: "May" },
+    date: { day: "28", month: "May" },
     author: "Admin",
     tag: "Pizza",
     title: "How Many Calories in a Slice of Pizza? A Complete Guide by Type",
