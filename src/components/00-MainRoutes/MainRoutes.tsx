@@ -16,6 +16,7 @@ import Blogs2 from "../10-Blogs/Blogs2";
 import Blog3 from "../10-Blogs/Blog3";
 import Blogs from "../10-Blogs/Blogs";
 import Blog4 from "../10-Blogs/Blog4";
+import Blog5 from "../10-Blogs/Blog5";
 
 const MainRoutes: React.FC = () => {
   function AppRoutes() {
@@ -31,6 +32,7 @@ const MainRoutes: React.FC = () => {
       "/crispy-and-crunchy",
       "/discover-matchpoint-salem",
       "/how-many-calories-in-a-slice-of-pizza",
+      "/best-veg-restro-in-salem",
     ];
     const showHeader = headerRoutes.includes(location.pathname);
 
@@ -50,6 +52,7 @@ const MainRoutes: React.FC = () => {
             path="/how-many-calories-in-a-slice-of-pizza"
             element={<Blog4 />}
           />
+          <Route path="/best-veg-restro-in-salem" element={<Blog5 />} />
         </Routes>
         <Footer />
       </div>

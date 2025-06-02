@@ -5,6 +5,7 @@ import blog1Cover from "../../assets/blog/blog1Cover.jpg";
 import blog2Cover from "../../assets/blog/blog2.jpg";
 import blog3Cover from "../../assets/blog/blog31.jpg";
 import blog4Cover from "../../assets/blog/blog41.jpg";
+import blog5Cover from "../../assets/blog/blog5Cover.jpg";
 
 import { ShieldUser, Tags, TrendingUp } from "lucide-react";
 
@@ -43,6 +44,15 @@ const blogData = [
     tag: "Pizza",
     title: "How Many Calories in a Slice of Pizza? A Complete Guide by Type",
     route: "/how-many-calories-in-a-slice-of-pizza",
+  },
+  {
+    cover: blog5Cover,
+    date: { day: "02", month: "June" },
+    author: "Admin",
+    tag: "Veg Restro",
+    title:
+      "Best Veg Restaurants in Salem: Try Our Mini Tiffin Combo at MatchPoint!",
+    route: "/best-veg-restro-in-salem",
   },
 ];
 
