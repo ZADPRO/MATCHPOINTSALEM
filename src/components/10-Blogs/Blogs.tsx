@@ -6,6 +6,7 @@ import blog2Cover from "../../assets/blog/blog2.jpg";
 import blog3Cover from "../../assets/blog/blog31.jpg";
 import blog4Cover from "../../assets/blog/blog41.jpg";
 import blog5Cover from "../../assets/blog/blog5Cover.jpg";
+import blog6Cover from "../../assets/blog/blog6.jpg";
 
 import { ShieldUser, Tags, TrendingUp } from "lucide-react";
 
@@ -53,6 +54,15 @@ const blogData = [
     title:
       "Best Veg Restaurants in Salem: Try Our Mini Tiffin Combo at MatchPoint!",
     route: "/best-veg-restro-in-salem",
+  },
+  {
+    cover: blog6Cover,
+    date: { day: "19", month: "June" },
+    author: "Admin",
+    tag: "Biryani",
+    title:
+      "Best Biryani Near Me, Home Delivery in Salem: Why Match Point Tops the List",
+    route: "/best-biriyani-near-me",
   },
 ];
 
